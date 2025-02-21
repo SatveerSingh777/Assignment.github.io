@@ -1,0 +1,225 @@
+body{
+  background-color: #212121;
+}
+section {
+    box-sizing: border-box;
+    width: 100%;
+    /* border: 2px solid black; */
+    color: white;
+    margin: 0 ;
+    background: #212121;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contain{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    aspect-ratio: 3/2;
+    /* margin-top: 50px ; */
+    
+    /* border: 2px solid black; */
+}
+
+.parent-div {
+    /* width: 500px; */
+    /* height: 400px; */
+    aspect-ratio: 3/2;
+    /* border: 2px solid #000; */
+    position: relative;
+    overflow: visible;
+    margin-bottom: 20px;
+  }
+
+.one{
+    top:15%;
+    left: 20%;
+    /* border: 2px solid white; */
+  }
+.two{
+    top:10%;
+    left: 20%;
+  }
+
+
+  .child-div {
+    aspect-ratio: 3/2;
+    position: absolute;
+    transition: all 1s ease;
+    object-fit: cover;
+    /* background-color: aliceblue; */
+  }
+  .child-div img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: imageAni 2s ease infinite; 
+}
+
+
+@keyframes imageAni {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0.5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+  }
+    
+}
+
+
+.para{
+  position: absolute;
+  top: 100px;
+  width:100%;
+  /* border: 2px solid black; */
+  /* left:20%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  transition: all 1s ease;
+  animation: paraMove 2s ease;
+}
+
+@keyframes paraMove {
+  from {
+    top: 200px;
+    opacity: -1;
+      transform: rotate('20deg');
+  }
+  to {
+    top: 100px;
+    opacity: 1;
+  }
+}
+
+.heading{
+  width: min-content;
+  aspect-ratio: 3/2;
+}
+
+.para h1{
+  color: white;
+  font-size: 8vw;
+  font: bold;
+  line-height: 0.9;
+  transition: all 0.5s ease;
+  
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-section video{
+  width: 80vw;
+  justify-content: center;
+}
+
+.card{
+  width: 100%;
+  /* height: 50vh; */
+  /* border: 2px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.cards{
+  height: 100%;
+  width: 30%;
+  /* border: 2px solid white; */
+  font-weight: 100;
+  /* text-align: center; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  position: relative;
+  animation: mymove 2s ease;
+  transition: all 2s ease;
+}
+
+@keyframes mymove {
+
+  from {
+    top: 60px;
+    opacity: -1;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.cards a{
+  color: white;
+}
+
+.left{
+  font-size:1.3vw;
+}
+.right{
+  color: white;
+  font-size: 2vw;
+  
+}
+
+
+.distiction{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.dis-parts{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dis-parts p{
+  width: min-content;
+  
+}
+
+@media screen and (max-width: 750px) {
+  .contain{
+  width: 100%;
+  /* border: 2px solid white; */
+}
+
+.parent-div {
+    width: 100%;
+    border: 2px solid white;
+  }
+  .child-div {
+    height: 100px;
+    /* border: 2px solid white; */
+    
+  }
+  .child-div img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: imageAni 2s ease infinite; 
+}
+}

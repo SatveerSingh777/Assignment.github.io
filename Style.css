@@ -1,0 +1,81 @@
+.navbar {
+    /* border: 2px solid rgb(198, 21, 21); */
+    background: #212121;
+    /* height: 5rem; */
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 0px; */
+    transition: all 0.5s ease-in-out;
+    transform: translateY(0%);
+    /* z-index: 100; */
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin-left: 20px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+}
+
+.nav-logo p {
+    font-size: 19px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-Icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 20px;
+    /* border: 2px solid red; */
+    width: 45vw;
+}
+
+.navbar-Icons li {
+    margin-left: 20px;
+}
+
+.navbar-Icons li a {
+    margin-right: 20px;
+    font-size: 19;
+    font-weight: 390;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.navbar-Icons li a:hover {
+    cursor: pointer;
+}
+
+.Bar {
+    height: 25px;
+    margin-right: 20px;
+    border: 2px solid white;
+}
+
+.ham-bar {
+    display: none;
+    /* border: 1px solid black; */
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
